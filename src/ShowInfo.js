@@ -55,13 +55,13 @@ const ShowInfo = () => {
         {searchInput && (
           <SearchResults
             results={BookingsFetcher.filter(  e =>    
-             e.id == searchInput  || 
-             e.firstName.slice(1).toLowerCase() === searchInput ||
-             e.surname.slice(1).toLowerCase() === searchInput ||
-             e.firstName.toLowerCase() === searchInput ||
-             e.surname.toLowerCase() === searchInput ||
-             e.email.toLowerCase() === searchInput ||
-             e.surname.charAt(0).toUpperCase() + e.email.charAt(0).toUpperCase() +  e.email.slice(1).toLowerCase() === searchInput
+              e.firstName.toLowerCase() === searchInput ||
+              e.surname.toLowerCase() === searchInput ||
+              e.firstName.charAt(0).toUpperCase() + e.firstName.slice(1).toLowerCase() === searchInput ||
+              e.surname.charAt(0).toUpperCase() + e.surname.slice(1).toLowerCase() === searchInput ||
+              e.id == searchInput ||
+              e.email.toLowerCase() === searchInput ||
+              e.email.charAt(0).toUpperCase() + e.email.slice(1).toLowerCase() ===  searchInput
             )}
           />
         )}
