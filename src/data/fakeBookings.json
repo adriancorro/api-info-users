@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "firstName": "Walle",
+    "surname": "Mac",
+    "email": "walle@walle.com"
+  },
+  {
+    "id": 2,
+    "firstName": "Sadia",
+    "surname": "Begum",
+    "email": "begum_sadia@sadia.org"
+  },
+  {
+    "id": 3,
+    "firstName": "Henry",
+    "surname": "Wales",
+    "email": "harry@harry.com"
+  }
+]
