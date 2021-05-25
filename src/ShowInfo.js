@@ -55,6 +55,11 @@ const ShowInfo = () => {
         {searchInput && (
           <SearchResults
             results={BookingsFetcher.filter(  e =>    
+            
+             e.firstName === searchInput ||
+             e.surname === searchInput ||
+             e.firstName === searchInput ||
+             e.firstName.slice(1).toUpperCase() === searchInput ||
              e.id == searchInput  || 
              e.firstName.slice(1).toLowerCase() === searchInput ||
              e.surname.slice(1).toLowerCase() === searchInput ||
